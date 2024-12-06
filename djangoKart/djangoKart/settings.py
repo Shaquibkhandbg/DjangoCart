@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'category',
+    'accounts',
+    'store',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +71,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'djangoKart.wsgi.application'
+
+AUTH_USER_MODEL = 'accounts.Account'   # for creating custom user 
 
 
 # Database
